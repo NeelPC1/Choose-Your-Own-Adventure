@@ -88,3 +88,23 @@ hide.addEventListener('click', function(){
     darkEnd.style.display="none";
     hideEnd.style.display="block";
 })
+// Add a reset button to the DOM (example: dynamically or in HTML)
+const resetButton = document.createElement('button');
+resetButton.textContent = 'Reset';
+resetButton.id = 'reset';
+document.body.appendChild(resetButton);
+
+// Add event listener for the reset button
+resetButton.addEventListener('click', function() {
+    screen2.style.display = "none"; // Reset to initial state
+    screen1.style.display = "none"; // Reset to initial state
+    wait2screen.style.display = "none"; // Reset to initial state
+    fight.style.display = "block"; // Reset to initial state
+    wait.style.display = "block"; // Reset to initial state
+    lightEnd.style.display = "none"; // Reset to initial state
+    darkEnd.style.display = "none"; // Reset to initial state
+    rockEnd.style.display = "none"; // Reset to initial state
+    hideEnd.style.display = "none"; // Reset to initial state
+    initial.style.display = ""; // Show the initial screen again
+    buttons.style.display= ""; // Show the buttons again
+});
